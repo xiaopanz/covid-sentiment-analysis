@@ -2,7 +2,7 @@ import pickle
 import matplotlib.pyplot as plt
 import numpy as np
 
-def get_running_avg(data, interval=5):
+def get_running_avg(data, interval=4):
     data = np.array(data)
     new_data = np.zeros((len(data) - interval))
     
@@ -11,12 +11,12 @@ def get_running_avg(data, interval=5):
     
     return new_data
 
-fn = 'acc_list.pkl'
+fn = 'f1_list.pkl'
 
 acc_list = pickle.load(open(fn,"rb"))
 
 plt.plot(acc_list, color='lightblue', linewidth=2, alpha=0.75)
 plt.plot(get_running_avg(acc_list), color='deepskyblue')
 plt.xlabel('iteration')
-plt.ylabel('accuracy (%)')
-plt.savefig('accuracy_avg.png',)
+plt.ylabel('f1-score')
+plt.savefig('f1-avg.png',)
