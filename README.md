@@ -1,3 +1,3 @@
-# EECS498-004 Final Project - twitter_sentiment_analysis
+# Twitter Sentiment Analysis
 
-### Weiji Li, Xiaopan Zhang, Yutong Xu
+See Report for details.
