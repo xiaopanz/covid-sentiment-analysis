@@ -1,3 +1,2 @@
-# EECS498-004 Final Project - twitter_sentiment_analysis
+# Twitter Sentiment Analysis
 
-### Xiaopan Zhang
